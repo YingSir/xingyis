@@ -1,8 +1,8 @@
 spring:
   datasource:
-    username: ${SCAFFOLD_DB_USER:root}
-    password: ${SCAFFOLD_DB_PWD:root}
-    url: jdbc:mysql://${SCAFFOLD_DB_HOST:localhost}:3306/store?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&useSSL=true&serverTimezone=GMT%2B8
+    username: ${SCAFFOLD_DB_USER:bip}
+    password: ${SCAFFOLD_DB_PWD:kekai*123}
+    url: jdbc:mysql://${SCAFFOLD_DB_HOST:172.20.47.142}:3306/xy_store?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2B8
     #url: jdbc:oracle:thin:@${DB_HOST:localhost}:1521/store
     driverClassName: com.mysql.cj.jdbc.Driver   # 以前使用com.mysql.jdbc.Driver
 #    driverClassName: com.mysql.jdbc.Driver

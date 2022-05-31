@@ -1,9 +1,9 @@
-ogging:
+logging:
   config: classpath:logback.xml
 multipart:
   maxFileSize: 128KB
   maxRequestSize: 128KBc
-  uploadTempDir: c:/upload/springboot/
+  uploadTempDir: d:/upload/springboot/
 spring:
   autoconfigure:
     exclude: org.springframework.boot.autoconfigure.web.servlet.MultipartAutoConfiguration
@@ -26,4 +26,5 @@ spring:
       max-request-size: '100Mb'
 
 zookeeper:
-  address: ${SCAFFOLD_ZOOKEEPER_HOSTS:127.0.0.1:2181}
+#  address: ${SCAFFOLD_ZOOKEEPER_HOSTS:127.0.0.1:2181}
+  address: ${SCAFFOLD_ZOOKEEPER_HOSTS:172.20.48.19:34990}
