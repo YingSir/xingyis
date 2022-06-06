@@ -13,7 +13,7 @@ public class PasswordTest
         PasswordEncoder passwordEncoder = PasswordEncoderFactories.createDelegatingPasswordEncoder();
         String encode = passwordEncoder.encode("123456" );
         log.info("加密后的密码:" + encode);
-        log.info("bcrypt密码对比:" + passwordEncoder.matches("password", encode));
+        log.info("bcrypt密码对比:" + passwordEncoder.matches("123456", encode));
         String md5Password = "{MD5}88e2d8cd1e92fd5544c8621508cd706b";
         //MD5加密前的密码为:password
         log.info("MD5密码对比:" + passwordEncoder.matches("password", encode));

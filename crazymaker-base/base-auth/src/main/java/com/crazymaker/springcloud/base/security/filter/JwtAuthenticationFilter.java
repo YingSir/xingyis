@@ -105,8 +105,9 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter
             {
                 JwtAuthenticationToken authToken = new JwtAuthenticationToken(JWT.decode(token));
                 passedToken = this.getAuthenticationManager().authenticate(authToken);
-                UserDetails details = (UserDetails) passedToken.getDetails();
-                request.setAttribute(SessionConstants.USER_IDENTIFIER, details.getUsername());
+                //todo 这个有什么用？
+//                UserDetails details = (UserDetails) passedToken.getDetails();
+//                request.setAttribute(SessionConstants.USER_IDENTIFIER, details.getUsername());
             } else
             {
                 failed = new InsufficientAuthenticationException("请求头认证消息为空" );

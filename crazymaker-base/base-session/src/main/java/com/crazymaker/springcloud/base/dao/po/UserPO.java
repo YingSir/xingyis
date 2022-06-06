@@ -38,7 +38,7 @@ public class UserPO implements Serializable
     @Column(name = "USER_NAME", length = 40)
     private String username;
     //用户登录密码
-    @Column(name = "PASSWORD", length = 40)
+    @Column(name = "PASSWORD", length = 400)
     private String password;
 
 
